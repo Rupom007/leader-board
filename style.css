@@ -18,13 +18,14 @@ main{
                 Navigation
 -----------------------------------------*/
 header{
+    background-color: #562EFF;
     position: sticky;
     top: 0;
+    width: 100%;
+    height: 94px;
 }
 .navigation-bar{
-    background-color: #562EFF;
-    height: 94px;
-    width: 100%;
+    
 }
 .alignment{
     width: 50%;
@@ -198,12 +199,13 @@ header{
 ------------------------  */
 /* Mobile */
 @media only screen and (max-width: 688px) {
-    .navigation-bar{
-        width: 104%;
+    header{
+        width: 109%;
+        margin-left: 0;
     }
     .alignment{
         width: 100%;
-        margin-left: 2%;
+        margin-left: 0%;
     }
     .profile a{
         margin-right: 15px;
@@ -225,13 +227,15 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
+        grid-row-gap: 20px;
     }
 }
 
 /* Tablet */
 @media only screen and (min-width: 689px) and (max-width: 991px) {
-    .navigation-bar{
+    header{
         width: 104%;
+        margin-right: 0;
     }
     .alignment{
         width: 100%;
@@ -253,7 +257,6 @@ header{
     .courses{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         align-items: center;
     }
 }
